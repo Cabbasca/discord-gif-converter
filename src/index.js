@@ -12,7 +12,7 @@ async function main() {
     client.on(Events.MessageCreate, m => {
         if(m.author.bot) return
         m.attachments.forEach(async a => {
-            if(a.contentType.startsWith("image")) {
+            if(a.contentType.startsWith("image") && !a.name.endsWith(".gif")) {
                 const fileName = "images/" + a.name.split(".")[0] + ".gif"
                 await downloadImage(a.url, fileName)
                 await m.reply({files: [fileName]})
