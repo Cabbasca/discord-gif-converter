@@ -1,0 +1,15 @@
+{
+  "name": "gif-converter",
+  "version": "1.0.0",
+  "description": "Converts images on discord into gifs that you can favorite",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Trolman",
+  "license": "GPL",
+  "dependencies": {
+    "discord.js": "^14.13.0"
+  }
+}
